@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+.container {
+  display: grid;
+  height: auto;
+  width: 100%;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 200px 50px 338px 60px 30px;
+  grid-gap: 3px;
+  background-color:gray;
+}
+
+
+.meny{
+  grid-column: 1/4;
+  grid-row: 2/3;
+  background: url("img/kultbilde4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.midt{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: green;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.midtVenstre{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background:url("img/kultbilde3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.midtHøyre{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  background:url("img/kultbilde3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bunn{
+  grid-column: 1/4;
+  grid-row: 4/5;
+  background:url("img/kultbilde2_edited.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.midt img{
+  width: 100%;
+  height: auto;
+}
+
+.meny li {
+  display: inline;
+  /* gjør at listepunktene ikke plasseres under hverandre */
+  /*VIKTIG*/
+}
+
+.meny a {
+  /*display: block;  gjør om lenker til block(firkanter) */
+
+  width: 150px;
+  /* bredde på boks */
+  padding: 15px;
+  /* avstand mellom bokskant og innhold */
+  border-radius: 10px;
+  /* avrunder kant */
+  margin: 3px;
+  /* avstand mellom bokser */
+  color: white;
+  /* mørkegrå tekst */
+  font-weight: bold;
+  /* fet tekst */
+  text-decoration: none;
+  /* fjerner understrek */
+  text-align: center;
+  /* sentrerer tekst */
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+h1, h2 {
+    color: rgb(27, 41, 171);
+    position: center ;
+  }
+
+
+    body {
+background-color: black;
+}
+
+p {
+    color:brown
+}
+
+.centered-content {
+  text-align: center;
+}
