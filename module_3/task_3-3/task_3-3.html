@@ -9,10 +9,34 @@
     <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
+    
+    <h2>Discussion Questions and Answers</h2>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>What is the difference between invoking and creating a function?</li>
+      <p>Creating a function means defining it with a specific name and set of instructions, while invoking (or calling) a function means executing that function's instructions by using its name followed by parentheses.</p>
+
+      <li>Explain the syntax regarding semicolons and code blocks.</li>
+      <p>Semicolons are used to terminate statements in JavaScript, although they are sometimes optional. Code blocks are defined by curly braces `{ }` and group multiple statements or lines of code.</p>
+
+      <li>What happens when we try to store values from a function when it doesn't return any?</li>
+      <p>If a function doesn't return a value and we attempt to store its result, the variable will hold `undefined`.</p>
+
+      <li>How do we separate parameters from each other when creating a function?</li>
+      <p>Parameters are separated by commas within the parentheses of the function definition.</p>
+
+      <li>Explain how parameter names are related during the invocation and creation of a function.</li>
+      <p>When creating a function, parameter names are placeholders. When the function is invoked, arguments provided in the call replace these placeholders within the function.</p>
+
+      <li>Explain why a parameter is undefined when a function call is missing a parameter.</li>
+      <p>When a function call is missing a parameter, JavaScript assigns `undefined` to the corresponding parameter within the function, as no value was provided for it.</p>
+
+      <li>Explain what happens when we use recursive functions.</li>
+      <p>Recursive functions call themselves repeatedly until they meet a base condition that stops further calls. Without a base condition, they would cause an infinite loop and eventually a stack overflow error.</p>
     </ol>
+
+    <h2>Individual Reflection</h2>
+    <p>This assignment helped me deepen my understanding of functions in JavaScript. I learned how to define functions with parameters and return values, and how recursion works. I also gained practical experience in handling different function types, including those without return values, and appreciated the importance of well-structured function definitions for readability and reusability.</p>
+
     <script type="module" src="./task_3-3.mjs" defer></script>
   </body>
 </html>
