@@ -9,10 +9,29 @@
     <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
+
+    <h2>Diskusjonsspørsmål og svar</h2>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>Spørsmål: Kan vi løse problemet i del 1 med en enkel "for"-løkke?</li>
+      <p>Ja, vi kan løse oppgaven med én enkelt "for"-løkke for å telle opp fra 1 til 10 og deretter en ny "for"-løkke for å telle ned fra 10 til 1. Dette krever kun to løkker, én for opp og én for nedtelling, slik vi har gjort i koden.</p>
+
+      <li>Spørsmål: Er det mulig å lage en "uendelig" løkke i en "while"-løkke?</li>
+      <p>Ja, en "while"-løkke kan bli uendelig hvis betingelsen aldri blir falsk. For eksempel, hvis vi setter en konstant betingelse som alltid er sann, vil løkken kjøre for alltid. For å unngå dette, er det viktig å sikre at betingelsen endres på et tidspunkt for å avslutte løkken.</p>
+
+      <li>Spørsmål: Hvor raskt kan datamaskinen beregne gjetteleken, og kan den gjøre flere oppgaver samtidig?</li>
+      <p>Gjetteleken kan gå raskt eller langsomt, avhengig av hvor bredt tallområdet er 
+        (f.eks. mellom 1 og 1 million tar lengre tid enn 1 til 60). Under gjetteprosessen vil programmet normalt være opptatt med å beregne, 
+        så med mindre det er laget for asynkrone oppgaver, vil det fokusere på én oppgave om gangen.</p>
+
+      <li>Spørsmål: Hvordan fungerer forholdet mellom rader og kolonner i nested "for"-løkker?</li>
+      <p>I nested løkker representerer den ytre løkken ofte rader, og den indre løkken representerer kolonner. Ved å endre rekkefølgen på løkkene, 
+        endres også strukturen til utskriften. Vi kan derfor kontrollere hvordan data presenteres ved å justere rekkefølgen på løkkene.</p>
     </ol>
+
+    <h2>Individuell refleksjon</h2>
+    <p>Gjennom oppgaven fikk jeg en bedre forståelse av hvordan løkker fungerer og hvordan vi kan bruke dem for å strukturere data og lage interaktive 
+      elementer som gjettelek og tallmønstre. Jeg lærte også at effektiv bruk av løkker kan være avgjørende for å unngå uendelige løkker og sikre god ytelse i koden.</p>
+
     <script type="module" src="./task_3-2.mjs" defer></script>
   </body>
 </html>
