@@ -3,7 +3,6 @@ import { initPrintOut, printOut, newLine } from "../../common/script/utils.mjs";
 initPrintOut(document.getElementById("txtOut"));
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
-l
 let upCount = "Counting up: ";
 for (let i = 1; i <= 10; i++) {
     upCount += i + " ";
