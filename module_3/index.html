@@ -10,10 +10,24 @@
             margin: 0 auto;
             background: #70c5ce;
         }
+        #startButton {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #startButton:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
     <canvas id="gameCanvas" width="320" height="480"></canvas>
+    <button id="startButton">Start Game</button>
     <script src="flappybird.js"></script>
 </body>
 </html>
