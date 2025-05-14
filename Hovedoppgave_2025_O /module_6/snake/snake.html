@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Snake Spel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+      /* Generell styling for body for å sentrere canvas og sette bakgrunn */
+      body {
+        display: flex;
+        justify-content: center; /* Sentrerer horisontalt */
+        align-items: center;    /* Sentrerer vertikalt */
+        min-height: 100vh;      /* Minimum høyde for å fylle skjermen */
+        margin: 0;              /* Fjerner standard marg */
+        background-color: #2c3e50; /* Mørk blågrå bakgrunnsfarge */
+        font-family: 'Press Start 2P', cursive; /* Setter standardfont for siden */
+        overflow: hidden; /* Forhindrer scrollbars hvis canvas er for stort for viewport */
+      }
+      /* Forhindrer tekstvalg på elementer med denne klassen */
+      .prevent-select {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none;     /* IE 10 og IE 11 */
+        user-select: none;         /* Standard syntaks */
+      }
+      /* Styling for canvas-elementet */
+      canvas {
+        background-color: #fabd04; /* Gul bakgrunnsfarge for spillet */
+        border: 8px solid #1a252f; /* Mørkere ramme rundt canvas */
+        box-shadow: 0 0 25px rgba(0,0,0,0.6); /* Tydeligere skygge for dybdeeffekt */
+        image-rendering: pixelated; /* Sørger for skarpe piksler ved skalering (bra for retro-spill) */
+        image-rendering: -moz-crisp-edges; /* Firefox */
+        image-rendering: crisp-edges;    /* Standard */
+      }
+    </style>
+    <script type="module" src="./game.js" defer></script>
+  </head>
+  <body class="prevent-select">
+    <canvas id="cvs"></canvas>
+  </body>
+</html>
